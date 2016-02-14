@@ -10,3 +10,4 @@ All stubs reside in `functions.lua`.
 
 # Generating
 To generate, simply run the `generate` script with the Bash interpreter.
+On Windows, run LDoc with these parameters: `-d . functions.lua`.
