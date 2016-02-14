@@ -1,6 +1,6 @@
 # Afterbirth+ Documentation
 An attempt at documenting Afterbirth+ Lua API before it's even released.
-All stubs reside in `functions.lua`
+All stubs reside in `functions.lua`.
 
 # Dependencies
 * LDoc 1.4.3+
@@ -9,4 +9,5 @@ All stubs reside in `functions.lua`
 * Lua Filesystem 1.6.3+
 
 # Generating
-To generate, simply run the `generate` script with the Bash interpreter.
+To generate, simply run the `generate` script with the Bash interpreter.  
+On Windows, run LDoc with these parameters: `-d . functions.lua`.
