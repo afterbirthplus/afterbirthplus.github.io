@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>ldoc</h1>
+
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Scripts</h2>
+<ul class="$(kind=='Topics' and '' or 'nowrap'">
+  <li><strong>Functions</strong></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Script <code>Functions</code></h1>
+<p>Afterbirth+ Functions</p>
+<p></p>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Vector">Vector (x, y)</a></td>
+	<td class="summary">2D Vector object table</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Isaac.GetFrameCount">Isaac.GetFrameCount ()</a></td>
+	<td class="summary">Number of frames passed since the game started</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Isaac.Spawn">Isaac.Spawn (type, id, UNKNOWN, position, UNKNOWN)</a></td>
+	<td class="summary">Spawn an entity</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Entity.Update">Entity.Update (self)</a></td>
+	<td class="summary">Update the entity</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Entity.SetVelocity">Entity.SetVelocity (velocity)</a></td>
+	<td class="summary">Set velocity of the entity</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Isaac.GetPlayerTypeByName">Isaac.GetPlayerTypeByName (name)</a></td>
+	<td class="summary">Get the type of the current player (character) by its name</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Mod.addCallback">Mod.addCallback (self, callback, func, playertype)</a></td>
+	<td class="summary">Add a callback</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Isaac">Isaac</a></td>
+	<td class="summary">Functions from the Isaac table in the API</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Entity">Entity</a></td>
+	<td class="summary">Entity object table</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Player">Player</a></td>
+	<td class="summary">Player object table</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Mod">Mod</a></td>
+	<td class="summary">Functions from the Mod table in the API (unknown how one is created)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#ModCallbacks">ModCallbacks</a></td>
+	<td class="summary">Callback IDs (unknown how the table is received)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#EntityType">EntityType</a></td>
+	<td class="summary">Entity types (unknown how the table is received)</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Vector"></a>
+    <strong>Vector (x, y)</strong>
+    </dt>
+    <dd>
+    2D Vector object table
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">x</span>
+         X coordinate
+        </li>
+        <li><span class="parameter">y</span>
+         Y coordinate
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Vector object, probably a {x, y} table
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Isaac.GetFrameCount"></a>
+    <strong>Isaac.GetFrameCount ()</strong>
+    </dt>
+    <dd>
+    Number of frames passed since the game started
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Isaac.Spawn"></a>
+    <strong>Isaac.Spawn (type, id, UNKNOWN, position, UNKNOWN)</strong>
+    </dt>
+    <dd>
+    Spawn an entity
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">type</span>
+         Type of the entity, preferably from an EntityType table
+        </li>
+        <li><span class="parameter">id</span>
+         Numerical ID of the entity
+        </li>
+        <li><span class="parameter">UNKNOWN</span>
+         Unknown argument (no context to confirm)
+        </li>
+        <li><span class="parameter">position</span>
+         Vector of position
+        </li>
+        <li><span class="parameter">UNKNOWN</span>
+         Unknown argument (no context to confirm)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        UNKNOWN, suspected nil
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Entity.Update"></a>
+    <strong>Entity.Update (self)</strong>
+    </dt>
+    <dd>
+    Update the entity
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+         Entity to update (preferably self, using the :function() syntax)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        UNKNOWN, suspected nil
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Entity.SetVelocity"></a>
+    <strong>Entity.SetVelocity (velocity)</strong>
+    </dt>
+    <dd>
+    Set velocity of the entity
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">velocity</span>
+         Velocity of the entity
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Isaac.GetPlayerTypeByName"></a>
+    <strong>Isaac.GetPlayerTypeByName (name)</strong>
+    </dt>
+    <dd>
+    Get the type of the current player (character) by its name
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">name</span>
+         Name of the player (character)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Mod.addCallback"></a>
+    <strong>Mod.addCallback (self, callback, func, playertype)</strong>
+    </dt>
+    <dd>
+    Add a callback
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+         Entity to update (preferably self, using the :function() syntax)
+        </li>
+        <li><span class="parameter">callback</span>
+         The type of the callback, preferably from a ModCallbacks table
+        </li>
+        <li><span class="parameter">func</span>
+         The function that is supposed to be called
+        </li>
+        <li><span class="parameter">playertype</span>
+         The type of the player the callback should affect, unknown if required or not
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        UNKNOWN, suspected nil
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Isaac"></a>
+    <strong>Isaac</strong>
+    </dt>
+    <dd>
+    Functions from the Isaac table in the API
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Entity"></a>
+    <strong>Entity</strong>
+    </dt>
+    <dd>
+    Entity object table
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Player"></a>
+    <strong>Player</strong>
+    </dt>
+    <dd>
+    Player object table
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">Position</span>
+         Position vector of the player
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Mod"></a>
+    <strong>Mod</strong>
+    </dt>
+    <dd>
+    Functions from the Mod table in the API (unknown how one is created)
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "ModCallbacks"></a>
+    <strong>ModCallbacks</strong>
+    </dt>
+    <dd>
+    Callback IDs (unknown how the table is received)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">MC_POST_PERFECT_UPDATE</span>
+         Called after a proper update (probably takes lag into account), callback function receives a single argument "player" (the player table)
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "EntityType"></a>
+    <strong>EntityType</strong>
+    </dt>
+    <dd>
+    Entity types (unknown how the table is received)
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">ENTITY_EFFECT</span>
+         Entity from the "effect" group
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i>
+<i style="float:right;">Last updated 2016-02-14 23:30:07 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
