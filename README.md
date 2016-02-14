@@ -9,5 +9,5 @@ All stubs reside in `functions.lua`.
 * Lua Filesystem 1.6.3+
 
 # Generating
-To generate, simply run the `generate` script with the Bash interpreter.
+To generate, simply run the `generate` script with the Bash interpreter.  
 On Windows, run LDoc with these parameters: `-d . functions.lua`.
