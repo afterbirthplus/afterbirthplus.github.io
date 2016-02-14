@@ -21,7 +21,7 @@ EntityType = {ENTITY_EFFECT = 0}
 --- 2D Vector object table
 -- @param x X coordinate
 -- @param y Y coordinate
--- @return Vector object, probably a {x, y} table
+-- @return Vector object, probably a {x = x, y = y} table
 function Vector(x, y)
         -- stub
 end

@@ -1,9 +1,11 @@
 #!/usr/bin/bash
-if [ -z "$1" ]; then
-        echo "Need argument (commit message)!" 1>&2
-        exit 1
-fi
 ldoc -d . functions.lua
-git add .
-git commit -m "$1"
-git push
+if [ "$1" = "-c" ]; then
+        if [ -z "$2" ]; then
+                echo "Need argument (commit message)!" 1>&2
+                exit 1
+        fi
+        git add .
+        git commit -m "$2"
+        git push
+fi
