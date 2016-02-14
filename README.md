@@ -1,6 +1,6 @@
 # Afterbirth+ Documentation
 An attempt at documenting Afterbirth+ Lua API before it's even released.
-All stubs reside in `functions.lua`
+All stubs reside in `functions.lua`.
 
 # Dependencies
 * LDoc 1.4.3+
