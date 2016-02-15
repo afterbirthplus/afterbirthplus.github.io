@@ -51,8 +51,9 @@ function Entity.Update(self)
 end
 
 --- Set velocity of the entity
+-- @param self Entity to update (preferably self, using the :function() syntax)
 -- @param velocity Velocity of the entity
-function Entity.SetVelocity(velocity)
+function Entity.SetVelocity(self, velocity)
         -- stub
 end
 
