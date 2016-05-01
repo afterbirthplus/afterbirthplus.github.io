@@ -1,5 +1,5 @@
 -------
--- Functions from the Mod table.
+-- API for interacting with the actual modding subset of the game.
 -- @module Mod
 
 --- Add a callback.

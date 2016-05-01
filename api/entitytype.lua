@@ -1,5 +1,5 @@
 -------
--- Fields from the EntityType table.
+-- Entity types for @{Entity}.
 -- @module EntityType
 
 --- Entity from the "effect" group.

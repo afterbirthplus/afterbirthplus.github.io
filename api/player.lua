@@ -1,5 +1,5 @@
 -------
--- Functions from the Player table.
+-- API for interacting with the player.
 -- @module Player
 
 --- Position of the player.

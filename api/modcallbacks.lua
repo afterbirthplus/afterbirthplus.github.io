@@ -1,5 +1,5 @@
 -------
--- Fields from the ModCallbacks table.
+-- Mod callback types for @{Mod}.
 -- @module ModCallbacks
 
 --- Called after a proper update (probably takes lag into account).

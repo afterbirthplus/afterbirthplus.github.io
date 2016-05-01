@@ -1,5 +1,5 @@
 -------
--- Functions from the Isaac table.
+-- General API for interacting with the game.
 -- @module Isaac
         
 --- 2D Vector object table.

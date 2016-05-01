@@ -1,5 +1,5 @@
 -------
--- Functions from the Entity table.
+-- API for interacting with entities.
 -- @module Entity
 
 --- Update the entity.
