@@ -1,5 +1,6 @@
 -------
--- Afterbirth+ Functions
+-- Afterbirth+ Functions.
+-- Please note: all of this is mostly from teasers and guesswork, which is why it's incomplete.
 -- @script Functions
 
 --- Functions from the Isaac table in the API
@@ -64,8 +65,10 @@ end
 
 --- Render text on the screen
 -- @param text Text to render
+-- @param x X position of the text
+-- @param y Y position of the text
 -- @return UNKNOWN, suspected nil
-function Isaac.RenderText(text)
+function Isaac.RenderText(text, x, y)
 	-- stub
 end
 
