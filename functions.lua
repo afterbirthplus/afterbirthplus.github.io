@@ -22,7 +22,7 @@ EntityType = {ENTITY_EFFECT = 0}
 -- @param x X coordinate
 -- @param y Y coordinate
 -- @return Vector object, probably a {x = x, y = y} table
-function Vector(x, y)
+function Isaac.Vector(x, y)
         -- stub
 end
 
@@ -44,16 +44,14 @@ function Isaac.Spawn(type, id, UNKNOWN, position, UNKNOWN)
 end
 
 --- Update the entity
--- @param self Entity to update (preferably self, using the :function() syntax)
 -- @return UNKNOWN, suspected nil
-function Entity.Update(self)
+function Entity:Update()
         -- stub
 end
 
 --- Set velocity of the entity
--- @param self Entity to update (preferably self, using the :function() syntax)
 -- @param velocity Velocity of the entity
-function Entity.SetVelocity(self, velocity)
+function Entity:SetVelocity(velocity)
         -- stub
 end
 
@@ -64,12 +62,42 @@ function Isaac.GetPlayerTypeByName(name)
         -- stub
 end
 
+--- Render text on the screen
+-- @param text Text to render
+-- @return UNKNOWN, suspected nil
+function Isaac.RenderText(text)
+	-- stub
+end
+
+--- Get current tear damage
+-- @return number
+function Player:GetTearDamage()
+	-- stub
+end
+
+--- Get current shot speed
+-- @return number
+function Player:GetShotSpeed()
+	-- stub
+end
+
+--- Get current speed
+-- @return number
+function Player:GetSpeed()
+	-- stub
+end
+
+--- Get current health (red, counted in half hearts)
+-- @return number
+function Player:GetHearts()
+	-- stub
+end
+
 --- Add a callback  
--- @param self Entity to update (preferably self, using the :function() syntax)
 -- @param callback The type of the callback, preferably from @{ModCallbacks}
 -- @param func The function that is supposed to be called
 -- @param playertype The type of the player the callback should affect, unknown if required or not
 -- @return UNKNOWN, suspected nil
-function Mod.addCallback(self, callback, func, playertype)
+function Mod:addCallback(callback, func, playertype)
         -- stub
 end

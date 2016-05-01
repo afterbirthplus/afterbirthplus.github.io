@@ -51,7 +51,7 @@
 <h2><a href="#Functions">Functions</a></h2>
 <table class="function_list">
 	<tr>
-	<td class="name" nowrap><a href="#Vector">Vector (x, y)</a></td>
+	<td class="name" nowrap><a href="#Isaac.Vector">Isaac.Vector (x, y)</a></td>
 	<td class="summary">2D Vector object table</td>
 	</tr>
 	<tr>
@@ -63,11 +63,11 @@
 	<td class="summary">Spawn an entity</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Entity.Update">Entity.Update (self)</a></td>
+	<td class="name" nowrap><a href="#Entity:Update">Entity:Update ()</a></td>
 	<td class="summary">Update the entity</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Entity.SetVelocity">Entity.SetVelocity (self, velocity)</a></td>
+	<td class="name" nowrap><a href="#Entity:SetVelocity">Entity:SetVelocity (velocity)</a></td>
 	<td class="summary">Set velocity of the entity</td>
 	</tr>
 	<tr>
@@ -75,7 +75,27 @@
 	<td class="summary">Get the type of the current player (character) by its name</td>
 	</tr>
 	<tr>
-	<td class="name" nowrap><a href="#Mod.addCallback">Mod.addCallback (self, callback, func, playertype)</a></td>
+	<td class="name" nowrap><a href="#Isaac.RenderText">Isaac.RenderText (text)</a></td>
+	<td class="summary">Render text on the screen</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Player:GetTearDamage">Player:GetTearDamage ()</a></td>
+	<td class="summary">Get current tear damage</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Player:GetShotSpeed">Player:GetShotSpeed ()</a></td>
+	<td class="summary">Get current shot speed</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Player:GetSpeed">Player:GetSpeed ()</a></td>
+	<td class="summary">Get current speed</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Player:GetHearts">Player:GetHearts ()</a></td>
+	<td class="summary">Get current health (red, counted in half hearts)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Mod:addCallback">Mod:addCallback (callback, func, playertype)</a></td>
 	<td class="summary">Add a callback</td>
 	</tr>
 </table>
@@ -115,8 +135,8 @@
 
     <dl class="function">
     <dt>
-    <a name = "Vector"></a>
-    <strong>Vector (x, y)</strong>
+    <a name = "Isaac.Vector"></a>
+    <strong>Isaac.Vector (x, y)</strong>
     </dt>
     <dd>
     2D Vector object table
@@ -199,19 +219,13 @@
 
 </dd>
     <dt>
-    <a name = "Entity.Update"></a>
-    <strong>Entity.Update (self)</strong>
+    <a name = "Entity:Update"></a>
+    <strong>Entity:Update ()</strong>
     </dt>
     <dd>
     Update the entity
 
 
-    <h3>Parameters:</h3>
-    <ul>
-        <li><span class="parameter">self</span>
-         Entity to update (preferably self, using the :function() syntax)
-        </li>
-    </ul>
 
     <h3>Returns:</h3>
     <ol>
@@ -224,8 +238,8 @@
 
 </dd>
     <dt>
-    <a name = "Entity.SetVelocity"></a>
-    <strong>Entity.SetVelocity (self, velocity)</strong>
+    <a name = "Entity:SetVelocity"></a>
+    <strong>Entity:SetVelocity (velocity)</strong>
     </dt>
     <dd>
     Set velocity of the entity
@@ -233,9 +247,6 @@
 
     <h3>Parameters:</h3>
     <ul>
-        <li><span class="parameter">self</span>
-         Entity to update (preferably self, using the :function() syntax)
-        </li>
         <li><span class="parameter">velocity</span>
          Velocity of the entity
         </li>
@@ -272,8 +283,109 @@
 
 </dd>
     <dt>
-    <a name = "Mod.addCallback"></a>
-    <strong>Mod.addCallback (self, callback, func, playertype)</strong>
+    <a name = "Isaac.RenderText"></a>
+    <strong>Isaac.RenderText (text)</strong>
+    </dt>
+    <dd>
+    Render text on the screen
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">text</span>
+         Text to render
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        UNKNOWN, suspected nil
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Player:GetTearDamage"></a>
+    <strong>Player:GetTearDamage ()</strong>
+    </dt>
+    <dd>
+    Get current tear damage
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Player:GetShotSpeed"></a>
+    <strong>Player:GetShotSpeed ()</strong>
+    </dt>
+    <dd>
+    Get current shot speed
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Player:GetSpeed"></a>
+    <strong>Player:GetSpeed ()</strong>
+    </dt>
+    <dd>
+    Get current speed
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Player:GetHearts"></a>
+    <strong>Player:GetHearts ()</strong>
+    </dt>
+    <dd>
+    Get current health (red, counted in half hearts)
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        number
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Mod:addCallback"></a>
+    <strong>Mod:addCallback (callback, func, playertype)</strong>
     </dt>
     <dd>
     Add a callback
@@ -281,9 +393,6 @@
 
     <h3>Parameters:</h3>
     <ul>
-        <li><span class="parameter">self</span>
-         Entity to update (preferably self, using the :function() syntax)
-        </li>
         <li><span class="parameter">callback</span>
          The type of the callback, preferably from <a href="index.html#ModCallbacks">ModCallbacks</a>
         </li>
@@ -418,7 +527,7 @@
 </div> <!-- id="main" -->
 <div id="about">
 <i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i>
-<i style="float:right;">Last updated 2016-02-15 18:58:49 </i>
+<i style="float:right;">Last updated 2016-05-01 22:27:41 </i>
 </div> <!-- id="about" -->
 </div> <!-- id="container" -->
 </body>
