@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-ldoc -d . functions.lua
+ldoc -d . api
 if [ "$1" = "-c" ]; then
         if [ -z "$2" ]; then
                 echo "Need argument (commit message)!" 1>&2
